@@ -1,0 +1,12 @@
+{
+  "name": "SMASHGG",
+  "description": "Wrapper for the SMASHGG api",
+  "author": "TetroX <tet70x@gmail.com>",
+  "main": "./main.js",
+  "version": "1.0.0",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "engine": "node >= 0.10.x"
+}

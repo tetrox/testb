@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "players",
+      "score"
+    ],
+    "properties": {
+      "id": {
+        "type": "number",
+        "default": 0
+      },
+      "players": {
+        "type": "array",
+        "items": {
+          "type": "number",
+          "default": 0
+        },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "score": {
+        "type": "array",
+        "items": {
+          "type": "number",
+          "default": 0
+        },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "rate": {
+      	"type": "number",
+      	"default": 3,
+      	"minimum": 1,
+      	"maximum": 5
+      }
+    }
+  }
+}

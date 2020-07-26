@@ -1,0 +1,10 @@
+{
+	"root": true,
+	"globals": {
+        "nodecg": false,
+        "NodeCG": false,
+    },
+	"extends": ["airbnb", "plugin:vue/recommended"],
+	"rules": {
+	}
+}

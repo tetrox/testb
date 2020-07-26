@@ -1,0 +1,24 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [
+    "enabled",
+    "connected",
+    "scene"
+  ],
+  "properties": {
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "connected": {
+      "type": "boolean",
+      "default": false
+    },
+    "scene": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

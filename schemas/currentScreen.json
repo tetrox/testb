@@ -1,0 +1,18 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "screen"
+  ],
+  "properties": {
+    "screen": {
+      "type": "string",
+      "default": "fight",
+      "examples": [
+        "fight"
+      ]
+    }
+  }
+}

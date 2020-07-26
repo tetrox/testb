@@ -1,0 +1,20 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "isBotOnline",
+    "users"
+  ],
+  "properties": {
+    "isBotOnline": {
+      "type": "boolean",
+      "default": false
+    },
+    "users": {
+      "type": "object",
+      "default": {}
+    }
+  }
+}

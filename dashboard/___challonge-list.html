@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<link rel="import" href="../bower_components/paper-button/paper-button.html">
+	<link rel="import" href="../bower_components/paper-input/paper-input.html">
+	<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
+	<link rel="import" href="../bower_components/paper-progress/paper-progress.html">
+	<link rel="import" href="../bower_components/paper-spinner/paper-spinner.html">
+	<link rel="import" href="icons.html">
+	<style>
+	paper-button#Up{
+		background-color: #0b0;
+		color: #fff;
+	}
+    paper-spinner.green{
+    	border-color: #0b0;
+    	margin: -8px 0px;
+    }
+    paper-spinner.red{
+    	border-color: #b00;
+    	margin: -8px 0px;
+    }
+    #checkbox.checked.paper-checkbox{
+	    border-color: #0b0!important;
+	    background-color: #0b0!important;
+	}
+	#UL{
+		width: 100%;
+	    height: 330px;
+	    overflow: hidden;
+	    overflow-y: scroll;
+	    margin-bottom: 10px;
+	}
+	#UL .fl-row{
+		display: flex;
+		height: 40px;
+ 		align-items: center;
+		text-align: center;
+	}
+	#UL .fl-row>div{
+		flex:1;
+	}
+	iron-icon {
+		width: 16px;
+		height: 16px;
+	}
+	</style>
+</head>
+<body>
+<div style="display:none;">
+	<div style="display: flex;" >
+		<div style="width: 33%; margin-left:2%">
+			<paper-input type="text" id="tornamentID" label="Challonge Tornament ID" value = '' style="    margin-top: -13px;"></paper-input>
+		</div>
+		<div style="width: 33%; margin-left:2%">
+			<paper-input type="text" id="quickSearch" label="Quick Search" value = '' style="    margin-top: -13px;"></paper-input>
+		</div>
+		<div style="width:30%; display: inline-block; float:left; text-align: center;"> 
+			<paper-button id="Up" raised  >Challonge Get</paper-button>
+			<paper-spinner id="loadSpin"  class="green"></paper-spinner>
+		</div>
+
+	</div>
+
+	<div class="tblcont">
+		<div id="UL" style="text-align:center;">		
+		</div>
+	</div>
+</div>
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="js/challonge-list.js"></script>
+</body>
+</html>

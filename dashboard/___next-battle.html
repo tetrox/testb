@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="import" href="../bower_components/paper-button/paper-button.html">
+	<link rel="import" href="../bower_components/paper-input/paper-input.html">
+	<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
+	<link rel="import" href="../bower_components/paper-progress/paper-progress.html">
+	<style>
+	paper-button#cancel{
+		background-color: #a00;
+		color: #fff;
+	}
+	paper-button#show{
+		background-color: #0b0;
+		color: #fff;
+	}
+	paper-button#swap{
+		background-color: #ffbc00;
+		color: #fff;
+	}	
+	paper-progress.y{
+		height: 2px;
+	}
+    paper-progress.y #primaryProgress.paper-progress {
+   		background: #ffbc00!important;
+   		transition: all 0.2s ease 0s;
+    }
+    paper-progress.y.ready #primaryProgress.paper-progress {
+   		background: #0b0!important;
+   		transition: none;
+    }
+	</style>
+</head>
+<body style="display: none;">
+	<div style="display: flex;" >
+		<paper-progress id="autoProgress" value="100" min="0" max="100" style="width: 100%;" class="y ready"></paper-progress>
+	</div>
+
+	<div style="display: flex;" >
+		<div style="width: 48%; margin-right: 4%;">
+			<paper-input type="text" id="pOneName" label="Player1 Name" value = ''></paper-input>
+		</div>
+		<div style="width: 48%;">
+			<paper-input type="text" id="pTwoName" label="Player2 Name" value = ''></paper-input>
+		</div>
+	</div>
+	<div style="display: flex;" >
+
+		<div style="width: 25%;">
+			<paper-input type="number" id="delay" label="delay[sec]" value ='5'></paper-input>
+		</div>
+		<div style="width: 25%; padding-top: 12px;  display: inline-block;  text-align: center;"> 
+			<paper-button id="swap" raised class="pink" >Swap</paper-button>
+		</div>
+		<div style="width: 25%; padding-top: 12px; display: inline-block;  text-align: center;"> 
+			<paper-button id="cancel" raised >Cancel</paper-button>
+		</div>
+		<div style="width: 25%; padding-top: 12px; display: inline-block;  text-align: center;"> 
+			<paper-button id="show" raised >Show</paper-button>
+		</div>
+		</div>
+	</div>	
+	<script src="js/next-battle.js"></script>
+</body>
+</html>

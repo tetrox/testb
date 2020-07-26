@@ -1,0 +1,28 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "one",
+    "two"
+  ],
+  "properties": {
+    "one": {
+      "type": "object",
+      "default": {
+        "name": "",
+        "social": "",
+        "link": "0"
+      }
+    },
+    "two": {
+      "type": "object",
+      "default": {
+        "name": "",
+        "social": "",
+        "link": "0"
+      }
+    }
+  }
+}
